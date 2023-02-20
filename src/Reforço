@@ -1,0 +1,39 @@
+import  java.util.Scanner;
+public class Reforço {
+  public static void main (Sting args[]) {
+     Scanner leia=new Scanner (System.in);
+     double [] [] matriz=new double[10] [3];
+     double li,col,cod,quant,prec;
+
+     for(li=0; li<10; li++) {
+       for(col=0; col<3; col++) {
+         if(col==0) {
+           System.out.print("Digite o codigo do produto:");
+           matriz[li] [col]=leia.netDouble();
+         }
+         if(col==1) {
+         System.out.print("Digite a quantidade:");
+         matriz[li] [col]=leia.netDouble();
+         }
+         if(col==2) {
+         System.out.print("Digite o preco:");
+         matriz[li] [col]=leia.netDouble();
+         }
+       }
+     }
+     //teste
+     for(li=0; li<10; li++) {
+       for(col=0; col<3; col++) {
+         System.out.print("");
+       }
+     }
+  }
+
+  System.out.println("\nA martriz é:")
+
+  for(int li = 0; li < 10; li++){
+  			for(int col = 0; col < 3; col++){
+  				System.out.println("[" + li + "][" + col + "]= " + matriz[li][col]);
+  			}
+  		}
+}
